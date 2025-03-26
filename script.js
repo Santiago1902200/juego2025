@@ -41,6 +41,18 @@ function comprobarNumero() {
         mensaje.style.color = 'orange';
     }
 
+      // Guardar intento en Firestore
+    try {
+        await addDoc(collection(db, "intentos"), {
+            numeroIntentado: intento,
+            resultado: resultado,
+            timestamp: new Date()
+        });
+        console.log("Intento guardado en Firestore");
+    } catch (error) {
+        console.error("Error al guardar intento:", error);
+    }
+
     input.value = '';
     input.focus();
 }
