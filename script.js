@@ -1,3 +1,12 @@
+ const firebaseConfig = {
+    apiKey: "AIzaSyCkorvIgkM-xZ4YQYmpn_Zi-uwe_CMm99U",
+    authDomain: "juego-unico.firebaseapp.com",
+    projectId: "juego-unico",
+    storageBucket: "juego-unico.firebasestorage.app",
+    messagingSenderId: "1072325060700",
+    appId: "1:1072325060700:web:e061578857ec1e7dbede99"
+  };
+
 const numeroSecreto = Math.floor(Math.random() * 100) + 1;
 
 function comprobarNumero() {
