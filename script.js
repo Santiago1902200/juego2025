@@ -65,4 +65,3 @@ async function comprobarNumero() {
 
 // Asignar la función al botón (opcional, si usas `onclick` en HTML no es necesario)
 document.querySelector("button").addEventListener("click", comprobarNumero);
-
